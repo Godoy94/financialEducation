@@ -1,7 +1,7 @@
 function calcular() {
 
     var nome = document.getElementById('nome').value
-    var custoFixo = parseInt(document.getElementById('custoFixo').value)
+    var custoFixo = parseFloat(document.getElementById('custoFixo').value)
     var salarioReal = custoFixo * 3
     
     if(nome == ''){
