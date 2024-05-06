@@ -11,38 +11,37 @@
 </head>
 
 <body>
-
-    <div class="principal">
-
-        <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/svg/porquinho.svg" alt="">
                 </a>
             </div>
-        </nav>
+    </nav>
 
-        <div class="conteudo container">
-            <h1>Calculo Ed. financeira</h1>
+    <main class="container">
+        <h1>Calculo Ed. financeira</h1>
 
-            <p>Desenvolvido apenas para fins de aprendizado em desenvolvimento WEB</p>
-            <p>Foram utilizadas nessa aplicação, HTML5, CSS3/BOOTSTRAP 4 e JavaScript Puro</p>
+        <p>Desenvolvido apenas para fins de aprendizado em desenvolvimento WEB</p>
+        <p>Foram utilizadas nessa aplicação, HTML5, CSS3/BOOTSTRAP 4 e JavaScript Puro</p>
 
-            <div class="calculadora">
-                <input required type="text" id="nome" placeholder="Qual seu nome?">
-                <input type="number" id="custoFixo" placeholder="Custo fixo mensal?">
-
-                <button class="btn btn-primary" onclick="calcular()">Calcular</button>
-
-                <div class="infos">
-                    <h5 id="infosNome"></h5>
-                    <h5 id="infosCustoMensal"></h5>
-                </div>
-
-                <button class="btn btn-secondary" onclick="limpar()">Limpar</button>
-            </div>
+        <div class="inputs">
+            <input required type="text" id="nome" placeholder="Qual seu nome?">
+            <input type="number" id="custoFixo" placeholder="Custo fixo mensal?">
+            
         </div>
-    </div>
+
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="calculate()">Calcular</button>
+            <button class="btn btn-secondary" onclick="limpar()">Limpar</button>
+        </div>
+
+        <div class="infos">
+            <h5 id="infosNome"></h5>
+            <h5 id="infosCustoMensal"></h5>
+        </div>
+
+    </main>
 
     <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
